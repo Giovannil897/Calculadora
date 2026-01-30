@@ -1,6 +1,6 @@
 ﻿namespace Calculadora
 {
-    partial class Form1
+    partial class frmMenu
     {
         /// <summary>
         ///  Required designer variable.
@@ -28,10 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
-            components = new System.ComponentModel.Container();
+            SuspendLayout();
+            // 
+            // frmMenu
+            // 
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(420, 450);
+            Name = "frmMenu";
             Text = "Form1";
+            ResumeLayout(false);
         }
 
         #endregion
