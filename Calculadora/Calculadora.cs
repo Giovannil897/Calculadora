@@ -24,7 +24,15 @@ namespace Calculadora
                 a = Convert.ToInt32(VariableA.Text);
                 int b = 0;
                 b = Convert.ToInt32(VariableB.Text);
-                int c = a + b;
+                int c =0;
+                if (radioButton1.Checked)
+                    c = a + b;
+                if (radioButton2.Checked)
+                    c = a - b;
+                if (radioButton3.Checked)
+                    c = a * b;
+                if (radioButton4.Checked)
+                    c = a / b;
                 MessageBox.Show("El resultado es " + c.ToString(), "sistema", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch (Exception)

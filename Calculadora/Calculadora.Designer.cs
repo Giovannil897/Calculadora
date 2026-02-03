@@ -34,10 +34,10 @@
             label2 = new Label();
             label1 = new Label();
             groupBox1 = new GroupBox();
-            radioButton1 = new RadioButton();
-            radioButton2 = new RadioButton();
-            radioButton3 = new RadioButton();
             radioButton4 = new RadioButton();
+            radioButton3 = new RadioButton();
+            radioButton2 = new RadioButton();
+            radioButton1 = new RadioButton();
             groupBox1.SuspendLayout();
             SuspendLayout();
             // 
@@ -96,16 +96,28 @@
             groupBox1.TabStop = false;
             groupBox1.Text = "Operaciones";
             // 
-            // radioButton1
+            // radioButton4
             // 
-            radioButton1.AutoSize = true;
-            radioButton1.Location = new Point(11, 21);
-            radioButton1.Name = "radioButton1";
-            radioButton1.Size = new Size(54, 19);
-            radioButton1.TabIndex = 0;
-            radioButton1.TabStop = true;
-            radioButton1.Text = "suma";
-            radioButton1.UseVisualStyleBackColor = true;
+            radioButton4.AutoSize = true;
+            radioButton4.Location = new Point(11, 96);
+            radioButton4.Name = "radioButton4";
+            radioButton4.Size = new Size(66, 19);
+            radioButton4.TabIndex = 3;
+            radioButton4.TabStop = true;
+            radioButton4.Text = "division";
+            radioButton4.UseVisualStyleBackColor = true;
+            // 
+            // radioButton3
+            // 
+            radioButton3.AutoSize = true;
+            radioButton3.Location = new Point(11, 71);
+            radioButton3.Name = "radioButton3";
+            radioButton3.Size = new Size(101, 19);
+            radioButton3.TabIndex = 2;
+            radioButton3.TabStop = true;
+            radioButton3.Text = "multiplicacion";
+            radioButton3.UseVisualStyleBackColor = true;
+            radioButton3.CheckedChanged += radioButton3_CheckedChanged;
             // 
             // radioButton2
             // 
@@ -118,28 +130,16 @@
             radioButton2.Text = "resta";
             radioButton2.UseVisualStyleBackColor = true;
             // 
-            // radioButton3
+            // radioButton1
             // 
-            radioButton3.AutoSize = true;
-            radioButton3.Location = new Point(11, 71);
-            radioButton3.Name = "radioButton3";
-            radioButton3.Size = new Size(94, 19);
-            radioButton3.TabIndex = 2;
-            radioButton3.TabStop = true;
-            radioButton3.Text = "radioButton3";
-            radioButton3.UseVisualStyleBackColor = true;
-            radioButton3.CheckedChanged += radioButton3_CheckedChanged;
-            // 
-            // radioButton4
-            // 
-            radioButton4.AutoSize = true;
-            radioButton4.Location = new Point(11, 96);
-            radioButton4.Name = "radioButton4";
-            radioButton4.Size = new Size(94, 19);
-            radioButton4.TabIndex = 3;
-            radioButton4.TabStop = true;
-            radioButton4.Text = "radioButton4";
-            radioButton4.UseVisualStyleBackColor = true;
+            radioButton1.AutoSize = true;
+            radioButton1.Location = new Point(11, 21);
+            radioButton1.Name = "radioButton1";
+            radioButton1.Size = new Size(54, 19);
+            radioButton1.TabIndex = 0;
+            radioButton1.TabStop = true;
+            radioButton1.Text = "suma";
+            radioButton1.UseVisualStyleBackColor = true;
             // 
             // Calculadora
             // 
