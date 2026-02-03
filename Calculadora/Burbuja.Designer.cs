@@ -32,6 +32,7 @@
             Desordenados = new DataGridViewTextBoxColumn();
             dataGridView2 = new DataGridView();
             dataGridViewTextBoxColumn1 = new DataGridViewTextBoxColumn();
+            button1 = new Button();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dataGridView2).BeginInit();
             SuspendLayout();
@@ -64,11 +65,21 @@
             dataGridViewTextBoxColumn1.HeaderText = "Ordenados";
             dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
             // 
+            // button1
+            // 
+            button1.Location = new Point(342, 169);
+            button1.Name = "button1";
+            button1.Size = new Size(75, 23);
+            button1.TabIndex = 2;
+            button1.Text = "ordenar";
+            button1.UseVisualStyleBackColor = true;
+            // 
             // Burbuja
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(button1);
             Controls.Add(dataGridView2);
             Controls.Add(dataGridView1);
             Name = "Burbuja";
@@ -84,5 +95,6 @@
         private DataGridViewTextBoxColumn Desordenados;
         private DataGridView dataGridView2;
         private DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private Button button1;
     }
 }
