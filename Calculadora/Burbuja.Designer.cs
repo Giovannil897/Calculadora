@@ -1,4 +1,5 @@
-﻿namespace Calculadora
+﻿
+namespace Calculadora
 {
     partial class Burbuja
     {
@@ -28,73 +29,76 @@
         /// </summary>
         private void InitializeComponent()
         {
-            dataGridView1 = new DataGridView();
+            this.dgvDesordenado = new DataGridView();
             Desordenados = new DataGridViewTextBoxColumn();
-            dataGridView2 = new DataGridView();
+            this.dgvOrdenado = new DataGridView();
             dataGridViewTextBoxColumn1 = new DataGridViewTextBoxColumn();
-            button1 = new Button();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)dataGridView2).BeginInit();
+            btOrdenar = new Button();
+            ((System.ComponentModel.ISupportInitialize)this.dgvDesordenado).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)this.dgvOrdenado).BeginInit();
             SuspendLayout();
             // 
-            // dataGridView1
+            // dgvDesordenado
             // 
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { Desordenados });
-            dataGridView1.Location = new Point(12, 12);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.Size = new Size(240, 399);
-            dataGridView1.TabIndex = 0;
+            this.dgvDesordenado.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvDesordenado.Columns.AddRange(new DataGridViewColumn[] { Desordenados });
+            this.dgvDesordenado.Location = new Point(12, 12);
+            this.dgvDesordenado.Name = "dgvDesordenado";
+            this.dgvDesordenado.Size = new Size(240, 399);
+            this.dgvDesordenado.TabIndex = 0;
             // 
             // Desordenados
             // 
             Desordenados.HeaderText = "Desordenados";
             Desordenados.Name = "Desordenados";
             // 
-            // dataGridView2
+            // dgvOrdenado
             // 
-            dataGridView2.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView2.Columns.AddRange(new DataGridViewColumn[] { dataGridViewTextBoxColumn1 });
-            dataGridView2.Location = new Point(532, 12);
-            dataGridView2.Name = "dataGridView2";
-            dataGridView2.Size = new Size(240, 399);
-            dataGridView2.TabIndex = 1;
+            this.dgvOrdenado.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvOrdenado.Columns.AddRange(new DataGridViewColumn[] { dataGridViewTextBoxColumn1 });
+            this.dgvOrdenado.Location = new Point(363, 12);
+            this.dgvOrdenado.Name = "dgvOrdenado";
+            this.dgvOrdenado.Size = new Size(240, 399);
+            this.dgvOrdenado.TabIndex = 1;
             // 
             // dataGridViewTextBoxColumn1
             // 
             dataGridViewTextBoxColumn1.HeaderText = "Ordenados";
             dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
             // 
-            // button1
+            // btOrdenar
             // 
-            button1.Location = new Point(342, 169);
-            button1.Name = "button1";
-            button1.Size = new Size(75, 23);
-            button1.TabIndex = 2;
-            button1.Text = "ordenar";
-            button1.UseVisualStyleBackColor = true;
+            btOrdenar.Location = new Point(267, 164);
+            btOrdenar.Name = "btOrdenar";
+            btOrdenar.Size = new Size(75, 23);
+            btOrdenar.TabIndex = 2;
+            btOrdenar.Text = "ordenar";
+            btOrdenar.UseVisualStyleBackColor = true;
+            btOrdenar.Click += this.button1_Click;
             // 
             // Burbuja
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
-            Controls.Add(button1);
-            Controls.Add(dataGridView2);
-            Controls.Add(dataGridView1);
+            ClientSize = new Size(617, 450);
+            Controls.Add(btOrdenar);
+            Controls.Add(this.dgvOrdenado);
+            Controls.Add(this.dgvDesordenado);
             Name = "Burbuja";
             Text = "Form2";
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)dataGridView2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)this.dgvDesordenado).EndInit();
+            ((System.ComponentModel.ISupportInitialize)this.dgvOrdenado).EndInit();
             ResumeLayout(false);
         }
 
         #endregion
 
         private DataGridView dataGridView1;
+        private DataGridView dgvDesordenado;
         private DataGridViewTextBoxColumn Desordenados;
+        private DataGridView dgvOrdenado;
         private DataGridView dataGridView2;
         private DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
-        private Button button1;
+        private Button btOrdenar;
     }
 }

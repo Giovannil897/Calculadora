@@ -14,5 +14,13 @@ namespace Calculadora
         {
             InitializeComponent();
         }
+        private void button1_Click(object sender, EventArgs e)
+        {
+            int[] ordenado = new int[dgvDesordenado.RowCount];
+            for(int i = 0; i < ordenado.Length; i++)
+            {
+                ordenado[i] = Convert.ToInt32(dgvDesordenado.Rows[i].Cells[0].Value);
+            }
+        }
     }
 }
