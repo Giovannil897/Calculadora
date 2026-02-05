@@ -18,5 +18,11 @@ namespace Calculadora
             Burbuja burb = new Burbuja();
             burb.Show();
         }
+
+        private void registroToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Registro reg = new Registro();
+            reg.Show();
+        }
     }
 }
